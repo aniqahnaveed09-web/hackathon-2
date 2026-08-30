@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - QuickServe</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+
+    <div class="auth_container">
+
+        <div class="auth_box">
+
+            <h1>QuickServe</h1>
+            <h2>Welcome Back</h2>
+            <p class="subtitle">Access your QuickServe dashboard</p>
+
+            <form id="loginForm">
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="you@example.com" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password" required>
+
+                <button type="submit">Log In</button>
+
+            </form>
+
+            <p class="switch_text">
+                Don't have an account?
+                <a href="../signup/signup.html">Create Account</a>
+            </p>
+
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="login.js" type="module"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,177 @@
+/* ==============================================
+   QuickServe — Login Page Styles
+   Dark Glassmorphic Theme
+   ============================================== */
+
+:root {
+    --bg-main: #12131C;
+    --bg-card: #1C1D2A;
+    --accent-primary: #A78BFA;
+    --accent-secondary: #F472B6;
+    --accent-glow: rgba(167, 139, 250, 0.25);
+    --text-primary: #F3F4F6;
+    --text-secondary: #9CA3AF;
+    --border-subtle: #2E3046;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.auth_container {
+    width: 100%;
+    max-width: 460px;
+}
+
+.auth_box {
+    width: 100%;
+    background-color: var(--bg-card);
+    padding: 2.5rem 2rem;
+    border: 1px solid var(--border-subtle);
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3), 0 0 60px var(--accent-glow);
+}
+
+.auth_box > h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 0.25rem;
+    background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.auth_box h2 {
+    text-align: center;
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 0.35rem;
+}
+
+.subtitle {
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 0.88rem;
+    margin-bottom: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    display: block;
+    font-size: 0.78rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--text-secondary);
+    margin-bottom: 0.4rem;
+}
+
+form input {
+    width: 100%;
+    padding: 0.7rem 0.9rem;
+    margin-bottom: 1.15rem;
+    background-color: var(--bg-main);
+    border: 1px solid var(--border-subtle);
+    border-radius: 12px;
+    color: var(--text-primary);
+    font-size: 0.92rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+form input::placeholder {
+    color: #6B7280;
+}
+
+form input:focus {
+    outline: none;
+    border-color: var(--accent-primary);
+    box-shadow: 0 0 0 3px var(--accent-glow);
+}
+
+form button[type="submit"] {
+    width: 100%;
+    padding: 0.75rem;
+    background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+    color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+    margin-top: 0.25rem;
+}
+
+form button[type="submit"]:hover {
+    box-shadow: 0 4px 16px var(--accent-glow);
+    transform: translateY(-1px);
+}
+
+form button[type="submit"]:active {
+    transform: translateY(0);
+}
+
+.switch_text {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 0.88rem;
+    color: var(--text-secondary);
+}
+
+.switch_text a {
+    color: var(--accent-primary);
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.switch_text a:hover {
+    color: var(--accent-secondary);
+    text-decoration: underline;
+}
+
+.auth_divider {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin: 1.25rem 0;
+}
+
+.auth_divider::before,
+.auth_divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: var(--border-subtle);
+}
+
+.auth_divider span {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
